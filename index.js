@@ -5,7 +5,7 @@ var io = require('socket.io')(http, {
   pollingDuration : 10
 });
 
-var port = 5000;
+var port = process.env.PORT || 5000;
 
 
 app.get('/', function(req, res){
